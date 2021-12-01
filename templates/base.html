@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widh=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <header>
+            <img src="" alt="Your logo">
+            <h1>FreeLog</h1>
+            <strong>Plan every stream in one place.</strong>
+            {% block page_header %}
+            {% endblock %}
+        </header>
+            {% block page_body %}
+            {% endblock %}
+        <footer>
+            {% block page_footer %}
+            {% endblock %}
+        </footer>
+    </body>
+</html>
