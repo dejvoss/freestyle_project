@@ -2,5 +2,58 @@
 {% load static %}
 
 {% block page_header %}
+<h2 class="text-center mb-5 pb-5">Management dashboard</h2>
 {% endblock %}
 
+{% block page_body %}
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white">
+            <img src="{% static 'images/forecasting_onwindow.webp' %}" class="card-img opacity-25" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Forecast</h5>
+              <p class="card-text">Easy to add for further analyze.</p>
+              <p class="card-text">Calculating deviation and comparing with actuals and past forecasts.</p>
+              <p class="card-text">Extra feature - adding promotions to see dependency</p>
+              <a href="#" class="btn btn-primary">Go there</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="{% static 'images/operational_planning.webp' %}" class="card-img opacity-25" alt="...">
+              <div class="card-img-overlay ">
+                <h5 class="card-title">Operation planning</h5>
+                <p class="card-text">Plan yearly, monthly, weekly and daily.</p>
+                <p class="card-text">User-friendly planning.</p>
+                <p class="card-text">Customized calculation features.</p>
+                <a href="#" class="btn btn-primary">Go there</a>  
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="{% static 'images/people_planning.webp' %}" class="card-img opacity-25" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Resource planning</h5>
+                <p class="card-text">Directly connected to operation planning.</p>
+                <p class="card-text">Easy to set.</p>
+                <a href="#" class="btn btn-primary">Go there</a>  
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="{% static 'images/statistic.webp' %}" class="card-img opacity-25" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Replanishment planning</h5>
+                <p class="card-text">Connected to all operational streams.</p>
+                <p class="card-text">Using machine learning for predictions.</p>
+                <a href="#" class="btn btn-primary">Go there</a>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+{% endblock %}
