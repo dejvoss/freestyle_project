@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+
+    <div class="row mt-3">
+        <div class="col-12">
+            <h2 class="display-5 text-center mb-3 pb-5">Forecasting</h2>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block page_body %}
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card bg-dark text-white">
+            <img src="{% static 'images/forecasting_onwindowrs.webp' %}" class="card-img opacity-25" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Add new forecast</h5>
+              <p class="card-text">Add manually single day, week, year</p>
+              <p class="card-text">Load from file</p>
+              <p class="card-text">Edit current forecast</p>
+              <a href="#" class="btn btn-primary">Go there</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="{% static 'images/operational_planningrs.webp' %}" class="card-img opacity-25" alt="...">
+              <div class="card-img-overlay ">
+                <h5 class="card-title">Statistics</h5>
+                <p class="card-text">Deviation</p>
+                <p class="card-text">Actuals vs forecast</p>
+                <p class="card-text">Yearly, weekly and daily view</p>
+                <a href="#" class="btn btn-primary">Go there</a>  
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="{% static 'images/people_planningrs.webp' %}" class="card-img opacity-25" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Influence</h5>
+                <p class="card-text">Add everything that influences discrepancies</p>
+                <p class="card-text">Promotions, pandemic, inflation</p>
+                <p class="card-text">Add the past to see future</p>
+                <a href="#" class="btn btn-primary">Go there</a>  
+            </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+{% endblock %}

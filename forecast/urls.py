@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('home.urls')),
-    path('forecast/', include('forecast.urls')),
-    path('operation-planning/', include('planning_operation.urls'))
+    path('', views.forecast_main_page, name='forecast-home')
 ]

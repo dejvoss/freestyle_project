@@ -9,9 +9,15 @@
         <script src="{% static 'js/bootstrap-5.1.3-dist/js/bootstrap.js' %}"></script>
     </head>
     <body>
-        <header class="logo-color"> 
-            <img src="{% static 'images/logo2.jpg' %}" class="img-fluid" width="300" height="200" alt="Your logo">
+        <header class="container-fluid">
+            <div class="row logo-color">
+                <div class="col">
+
+            <a href="{% url 'home' %}"><img src="{% static 'images/logo2.jpg' %}" class="img-fluid" width="300" height="200" alt="Your logo"></a>
             <p class="float-md-end">Plan and manage every stream in one place.</p>
+            <h1 class="display-3 text-center mb-3 pb-3 text-uppercase">Operation under control</h2>
+            </div>
+        </div>
             {% block page_header %}
             {% endblock %}
         </header>

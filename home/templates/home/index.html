@@ -2,7 +2,11 @@
 {% load static %}
 
 {% block page_header %}
-<h2 class="display-4 text-center mb-5 pb-5">Operational planner</h2>
+<div class="row mt-3">
+  <div class="col-12">
+      <h2 class="display-5 text-center mb-3 pb-5">Taking control was never that easy</h2>
+  </div>
+</div>
 {% endblock %}
 
 {% block page_body %}
@@ -16,7 +20,7 @@
               <p class="card-text">Easy to add for further analyze.</p>
               <p class="card-text">Calculating deviation and comparing with actuals and past forecasts.</p>
               <p class="card-text">Extra feature - adding promotions to see dependency</p>
-              <a href="#" class="btn btn-primary">Go there</a>
+              <a href="{% url 'forecast-home' %}" class="btn btn-primary">Go there</a>
             </div>
           </div>
         </div>
@@ -28,7 +32,7 @@
                 <p class="card-text">Plan yearly, monthly, weekly and daily.</p>
                 <p class="card-text">User-friendly planning.</p>
                 <p class="card-text">Customized calculation features.</p>
-                <a href="#" class="btn btn-primary">Go there</a>  
+                <a href="{% url 'planning_operation' %}" class="btn btn-primary">Go there</a>  
             </div>
             </div>
           </div>
